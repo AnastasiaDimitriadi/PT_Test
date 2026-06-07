@@ -1,2 +1,4 @@
 accessPAM.txt
 **/Solutions/*
+node_modules
+.env
