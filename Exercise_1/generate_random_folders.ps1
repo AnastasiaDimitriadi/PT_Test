@@ -1,5 +1,3 @@
- #Requires -Version 7
-
 $workingFolder = (Get-Item $PSCommandPath).Directory
 $rootSampleName = "SAMPLE"
 
