@@ -1,20 +1,25 @@
-# Description  
-Create a Javascript script that will:
-- Connect with an Oracle DB.  
-- Execute an SQL Statement and present the results.  
-- Execute PLSQL from within the script.  
+# Exercise 5 - Oracle Node.js Integration
 
-## More explanation
-Prerequisites  
-- Oracle DB.  
-You can set up one on Azure or run one locally on Docker from from Docker Hub [ https://hub.docker.com/r/gvenzl/oracle-free ]  
-There's a free 150euro/month subscription for new users.
+##Description
+This project demonstrates how to connect a Node.js application to an Oracle Database using Docker.  
+It executes SQL queries and PL/SQL blocks and prints the results in the console.
 
-## Instructions
-This is a hard one. You are not expected to solve it but you're expected to do the effort and be able to discuss about it.
+---
 
-## Deliverable
-Discussion material.
+## ⚙️ Tech Stack
 
-## Goal
-To see how you deal with hard unknown matters.
+- Node.js (v18+ recommended)
+- Oracle Database (gvenzl/oracle-free Docker image)
+- oracledb Node.js driver
+- dotenv for environment variables
+
+---
+
+## 🐳 Database Setup (Docker)
+
+The Oracle DB runs inside a Docker container.
+
+### Run the container:
+```bash
+docker run -d --name oracle-free -p 1521:1521 -e ORACLE_PASSWORD=Oracle12345 gvenzl/oracle-free
+Default Service Name: FREEPDB1 (or XEPDB1 depending on container setup)
